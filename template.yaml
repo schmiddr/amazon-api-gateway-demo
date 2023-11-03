@@ -189,6 +189,9 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       AccessControl: LogDeliveryWrite
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: ObjectWriter
 
   ##   Amplify Application for hosting
   AmplifyApp:
