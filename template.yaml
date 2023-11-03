@@ -187,6 +187,8 @@ Resources:
   ##   CloudFront access logs storage
   CloudFrontAccessLogsBucket:
     Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: LogDeliveryWrite
 
   ##   Amplify Application for hosting
   AmplifyApp:
